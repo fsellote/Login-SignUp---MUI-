@@ -1,7 +1,8 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Login from '/src/FormControl/Login';
+import SignUp from '/src/FormControl/SignUp';
+
 
 // Material UI Imports
 import Paper from '@mui/material/Paper';
@@ -12,8 +13,8 @@ import Switch from '@mui/material/Switch';
 
 
 function App() {
+  const [checked, setChecked] = useState(false  );
 
-  const [checked, setChecked] = useState(false);
   const handleChange = (event) => {
     setChecked(event.target.checked);
   };
